@@ -1,4 +1,4 @@
-import { Visual } from "../../src/visual";
+import { Calendar } from "../../src/calendar";
 import powerbiVisualsApi from "powerbi-visuals-api";
 import IVisualPlugin = powerbiVisualsApi.visuals.plugins.IVisualPlugin;
 import VisualConstructorOptions = powerbiVisualsApi.extensibility.visual.VisualConstructorOptions;
@@ -8,11 +8,11 @@ var powerbi: any = window[powerbiKey];
 var datePicker2D48A1603A5164157AE234EC418C72DFB_DEBUG: IVisualPlugin = {
     name: 'datePicker2D48A1603A5164157AE234EC418C72DFB_DEBUG',
     displayName: 'DatePicker2',
-    class: 'Visual',
+    class: 'Calendar',
     apiVersion: '5.11.0',
     create: (options?: VisualConstructorOptions) => {
-        if (Visual) {
-            return new Visual(options);
+        if (Calendar) {
+            return new Calendar(options);
         }
         throw 'Visual instance not found';
     },

@@ -24,7 +24,7 @@
  *  THE SOFTWARE.
  */
 
-"use strict";
+//"use strict";
 
 import { formattingSettings } from "powerbi-visuals-utils-formattingmodel";
 
