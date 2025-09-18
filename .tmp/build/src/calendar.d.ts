@@ -20,6 +20,8 @@ export declare class Calendar implements IVisual {
     private static CalendarMargins;
     private static DefaultTextXOffset;
     private static DefaultTextYOffset;
+    private highlightStart;
+    private highlightEnd;
     private applyDateRange;
     constructor(options: VisualConstructorOptions);
     update(options: VisualUpdateOptions): void;

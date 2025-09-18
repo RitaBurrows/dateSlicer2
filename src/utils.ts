@@ -21,6 +21,10 @@ export class Utils {
     public static TotalMinutes: number = 60;
     public static TotalHours: number = 24;
 
+    public static normaliseDate(date: Date): Date {
+        return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+    }
+
     public static  getFirstDayOfMonth(year: number, month: number): number {
         return new Date(year, month, 1).getDay();
     }

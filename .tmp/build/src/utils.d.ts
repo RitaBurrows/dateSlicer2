@@ -9,6 +9,7 @@ export declare class Utils {
     static TotalSeconds: number;
     static TotalMinutes: number;
     static TotalHours: number;
+    static normaliseDate(date: Date): Date;
     static getFirstDayOfMonth(year: number, month: number): number;
     static getNumberofDaysInCurrMonth(year: number, month: number): number;
     static getNumberofDaysInPrevMonth(year: number, month: number): number;
